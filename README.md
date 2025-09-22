@@ -79,9 +79,13 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %b
 
+    section フェーズ
+    Phase 1: 基礎固め (10-12月)      :p1, 2024-10-01, 2024-12-31
+    Phase 2: 音と語彙の集中特化 (1月) :p2, 2025-01-01, 2025-01-31
+    Phase 3: 応用と仕上げ (2-3月)    :p3, 2025-02-01, 2025-03-31
+
     section 単語
-    Distinction 2000 core vocab            :active, vocab1, 2024-10-01, 2024-12-31
-    Distinction 2000 long passages review  :vocab1b, 2025-01-01, 2025-01-31
+    Distinction 2000            :active, vocab1, 2024-10-01, 2025-03-31
     金のセンテンス                    :vocab2, 2025-01-01, 2025-03-31
 
     section 文法
@@ -94,6 +98,14 @@ gantt
     Online conversation     :conv, 2024-10-01, 2025-03-31
     TOEIC official set        :prep1, 2025-02-01, 2025-03-31
     Exam window                            :milestone, exam, 2025-04-15, 0d
+
+    classDef phase1 fill:#EEF2FF,stroke:#EEF2FF,color:#1f2937,font-size:12px;
+    classDef phase2 fill:#ECFDF5,stroke:#ECFDF5,color:#1f2937,font-size:12px;
+    classDef phase3 fill:#FEF3C7,stroke:#FEF3C7,color:#1f2937,font-size:12px;
+
+    class p1 phase1;
+    class p2 phase2;
+    class p3 phase3;
 ```
 
 - **1〜2月**: 文法と語彙を徹底的に固め、発音ルールを体系化。
