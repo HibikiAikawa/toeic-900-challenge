@@ -1,0 +1,57 @@
+name: Process Daily Log Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process-daily-log:
+    if: contains(github.event.issue.labels.*.name, 'daily-log')
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Create logs directory
+        run: mkdir -p logs
+        
+      - name: Extract issue body and convert to CSV
+        run: |
+          echo '${{ github.event.issue.body }}' > issue_body.txt
+          python scripts/issue_to_csv.py --input issue_body.txt --csv logs/daily.csv
+          
+      - name: Update KPI summary in README
+        run: |
+          python scripts/summary.py --csv logs/daily.csv
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add logs/daily.csv README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update daily log: $(date '+%Y-%m-%d')"
+            git push
+          fi
+          
+      - name: Comment on issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Daily log has been processed and KPIs updated automatically!'
+            })
