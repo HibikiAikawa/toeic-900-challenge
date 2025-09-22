@@ -1,0 +1,73 @@
+name: Daily Log
+description: 学習ログを記録し KPI を更新する日次テンプレート
+labels: ["daily-log"]
+title: "Daily Log: {{date}}"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        その日の学習状況を入力してください。数値は半角で入力し、未実施の項目は空欄のままで構いません。
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: 日付 (YYYY-MM-DD)
+      placeholder: 2024-10-14
+    validations:
+      required: true
+  - type: input
+    id: deru1000_solved
+    attributes:
+      label: Deru1000 solved
+      description: でる1000問の当日解いた問題数
+      placeholder: 45
+    validations:
+      required: true
+  - type: input
+    id: deru1000_understood
+    attributes:
+      label: Deru1000 understood
+      description: 理解済みとしてカウントできた累計問題数 (空欄可)
+      placeholder: 220
+    validations:
+      required: false
+  - type: input
+    id: vocab_reviewed
+    attributes:
+      label: Vocabulary reviewed
+      description: 当日に復習/学習した単語数
+      placeholder: 205
+    validations:
+      required: true
+  - type: input
+    id: vocab_understood
+    attributes:
+      label: Vocabulary understood
+      description: 「理解済み」と判断した累計単語数 (空欄可)
+      placeholder: 760
+    validations:
+      required: false
+  - type: input
+    id: grammar_hours
+    attributes:
+      label: Grammar study hours
+      description: 『一億人の英文法』等で学習した時間 (h)
+      placeholder: 1.3
+    validations:
+      required: true
+  - type: input
+    id: grammar_understood_ratio
+    attributes:
+      label: Grammar understood ratio
+      description: 文法理解度 (0~1 の実数, 空欄可)
+      placeholder: 0.35
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: 気づきや翌日のアクションなど (任意)
+      placeholder: 例: Part 5 の正答率が改善。明日はリスニング強化。
+    validations:
+      required: false

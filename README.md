@@ -1,3 +1,35 @@
+# KPI Monitor
+<!--KPIS-->
+### Latest 7 Days Snapshot
+| Date | Deru1000 Solved | Vocabulary | Grammar Study |
+| --- | --- | --- | --- |
+| 2024-10-14 | 45 questions | 205 words | 1.3h |
+| 2024-10-13 | 40 questions | 195 words | 1.0h |
+| 2024-10-12 | 62 questions | 240 words | 2.0h |
+| 2024-10-11 | 58 questions | 200 words | 1.2h |
+| 2024-10-10 | 60 questions | 225 words | 1.9h |
+| 2024-10-09 | 55 questions | 215 words | 1.8h |
+| 2024-10-08 | 52 questions | 212 words | 1.7h |
+
+### Progress Overview
+| Metric | Progress | Detail |
+| --- | --- | --- |
+| **Phase 1 time elapsed** | `........................` 0.0% | day 0 / 100 |
+| **Deru1000 understood** | `#####...................` 22.0% | 220 / 1,000 |
+| **Vocabulary understood** | `########................` 36.0% | 720 / 2,000 |
+| **Grammar understood** | `########................` 36.0% | - |
+
+### Output Summary
+| Metric | Last 7 days | Cumulative |
+| --- | --- | --- |
+| Deru1000 | 372 questions | 649 questions |
+| Vocabulary | 1,492 words | 2,940 words |
+| Grammar | 10.9h | 19.7h |
+<!--/KPIS-->
+
+---
+---
+---
 # TOEIC 900 Challenge
 
 2025年4月に TOEIC 900 点を突破するための公開学習ログ
@@ -73,10 +105,26 @@
   </tbody>
 </table>
 
-## 📊 今日のKPI
-<!--KPIS-->
-集計スクリプト `scripts/summary.py` がここを書き換えます。
-<!--/KPIS-->
+## Phase 1 Goal(on going)
+- **英文法を完璧にする**  
+  - 『一億人の英文法』の見出しを網羅し、内容を見なくても自分の口で説明できるようにする  
+  - 定量評価として『でる1000問（文法問題集）』を使い、全問完全に理解する
+- **語彙学習**  
+  - 『Distinction 2000』の**見出し**をすべて暗記 
+
+### 定量目標
+- でる1000問を全て理解
+- Distinction 2000のアプリ内でマスターまで到達
+
+### KPI
+- でる1000 解いた量
+- でる1000 理解した量 /1000
+- 単語量 (アプリ管理)　200 per day
+- 一億人の英文法 学習時間
+
+## Phase 2 KPI
+## Pahse 3 KPI
+
 
 ## 🛠️ How It Works
 1. 毎日 GitHub Issue フォーム「Daily Log」から学習実績を入力します。
@@ -86,60 +134,3 @@
    - 日次 Issue が作成されたとき
    - 毎晩 JST 21:30 の定期実行
 5. 必要に応じて `scripts/tweet.py` で X へ自動投稿、Slack 通知にも対応予定です。
-
-## 📂 Repository Layout
-```
-toeic-900-challenge/
-├─ README.md
-├─ logs/
-│  └─ daily.csv
-├─ scripts/
-│  ├─ summary.py
-│  └─ tweet.py
-└─ .github/
-   ├─ ISSUE_TEMPLATE/
-   │  └─ daily.yml
-   └─ workflows/
-      ├─ on-daily-issue.yml
-      └─ nightly-recalc.yml
-```
-
-## 🚀 Getting Started
-- 日次入力を始める前に `logs/daily.csv` にヘッダー行を用意しておきます。
-- 自動投稿を使う場合は以下の Secrets を GitHub リポジトリに設定してください。
-  - `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET`
-  - `SLACK_WEBHOOK_URL`（任意）
-- Poetry や pipenv など任意の方法で `scripts/` が依存するライブラリをセットアップしてください。
-
-## 🧪 Automation Details
-- `summary.py`
-  - 日次・週次の実行量、完全理解数、進捗率、90日到達予測を算出
-  - README の KPI セクションを更新
-- GitHub Actions
-  - `on-daily-issue.yml`: 日次 Issue 作成トリガーで `summary.py` を実行
-  - `nightly-recalc.yml`: JST 21:30 のスケジュールで再集計
-- `tweet.py`
-  - README から直近 KPI を取得し、X への投稿文を生成（自動 or ワンクリック）
-
-## ✅ 運用チェックリスト
-- [ ] 毎日 Issue 「Daily Log」から入力したか？
-- [ ] KPI が README に反映されているか？
-- [ ] 週次の進捗率・予測を確認したか？
-- [ ] X / Slack への共有を済ませたか？
-
-## 📌 Roadmap Ideas
-- 週次 KPI グラフ（PNG）自動生成
-- Slack 通知や note への週次まとめテンプレート生成
-- 入力漏れ検出とリマインダー発火
-
-
-
-- **1〜2月**: 文法と語彙を徹底的に固め、発音ルールを体系化。
-- **3月**: 公式問題集を回し込み、リスニング・リーディング両セクションの弱点をログ化。
-- **4月**: 模試と誤答分析で仕上げつつ、コンディション調整と英会話量を維持して本番へ。
-
-## 🧠 Why This Matters
-学習の積み上げを「数値で見える化」し、公開ログが継続力を高めるか検証します。TOEIC は成長を測る定量指標のひとつであり、真のゴールは英会話で自在に意思疎通できる状態です。外部への発信とデータドリブンな振り返りを組み合わせ、4月の 900 点達成とその先の英語運用力向上を目指します。
-
-## 📄 License
-MIT License（予定）。プロジェクトに合わせて適宜更新してください。
