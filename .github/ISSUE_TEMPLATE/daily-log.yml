@@ -1,7 +1,7 @@
 name: Daily Log
 description: 学習ログを記録し KPI を更新する日次テンプレート
 labels: ["daily-log"]
-title: "Daily Log: {{date}}"
+title: "Daily Log"
 body:
   - type: markdown
     attributes:
