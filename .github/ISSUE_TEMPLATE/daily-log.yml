@@ -68,6 +68,6 @@ body:
     attributes:
       label: Notes
       description: 気づきや翌日のアクションなど (任意)
-      placeholder: 例: Part 5 の正答率が改善。明日はリスニング強化。
+      placeholder: "例: Part 5 の正答率が改善。明日はリスニング強化。"
     validations:
       required: false
