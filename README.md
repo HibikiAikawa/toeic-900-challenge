@@ -11,14 +11,14 @@
 | **Phase 1 time elapsed** | `##......................` 9.0% | day 9 / 100 |
 | **Deru1000 understood** | - | - |
 | **Vocabulary understood** | - | - |
-| **Grammar understood** | - | - |
+| **Grammar understood** | `##......................` 10.0% | - |
 
 ### Output Summary
 | Metric | Last 7 days | Cumulative |
 | --- | --- | --- |
-| Deru1000 | 100 questions | 100 questions |
-| Vocabulary | 100 words | 100 words |
-| Grammar | 1.0h | 1.0h |
+| Deru1000 | 100 questions | 300 questions |
+| Vocabulary | 100 words | 300 words |
+| Grammar | 1.0h | 2.0h |
 <!--/KPIS-->
 
 ---
