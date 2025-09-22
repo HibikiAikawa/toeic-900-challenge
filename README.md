@@ -75,25 +75,25 @@ toeic-900-challenge/
 
 ```mermaid
 gantt
-    title Roadmap to TOEIC 900 (Jan-Apr 2025)
+    title Roadmap to TOEIC 900 (Oct 2024 - Apr 2025)
     dateFormat  YYYY-MM-DD
+    axisFormat  %b
 
-    section Daily Ritual
-    Online conversation (25min)     :active, conv, 2025-01-15, 2025-04-30
+    section 単語
+    Distinction 2000 core vocab            :active, vocab1, 2024-10-01, 2024-12-31
+    Distinction 2000 long passages review  :vocab1b, 2025-01-01, 2025-01-31
+    金のセンテンス                    :vocab2, 2025-01-01, 2025-03-31
 
-    section Foundations
-    Grammar deep dive (一億人の英文法 / でる1000) :crit, grammar, 2025-01-15, 2025-02-20
-    Distinction 2000 core vocab                         :vocab1, 2025-01-15, 2025-03-05
+    section 文法
+    Grammar deep dive (一億人の英文法 / でる1000) :crit, grammar, 2024-10-01, 2024-12-31
 
-    section Skill Builders
-    Pronunciation bootcamp (体系理解)                   :pron, 2025-02-01, 2025-02-29
-    Gold Phrase sprint                                  :vocab2, 2025-02-10, 2025-03-20
+    section 発音
+    Pronunciation bootcamp        :pron, 2025-01-01, 2025-01-31
 
-    section Exam Prep
-    TOEIC official set A (精読・精聴)                    :prep1, 2025-03-01, 2025-03-31
-    Mock exam + error log                               :prep2, 2025-04-01, 2025-04-15
-    Final taper & rest                                  :final, 2025-04-16, 2025-04-23
-    Exam week                                           :milestone, exam, 2025-04-26, 0d
+    section 応用
+    Online conversation     :conv, 2024-10-01, 2025-03-31
+    TOEIC official set        :prep1, 2025-02-01, 2025-03-31
+    Exam window                            :milestone, exam, 2025-04-15, 0d
 ```
 
 - **1〜2月**: 文法と語彙を徹底的に固め、発音ルールを体系化。
