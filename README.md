@@ -3,28 +3,22 @@
 ### Latest 7 Days Snapshot
 | Date | Deru1000 Solved | Vocabulary | Grammar Study |
 | --- | --- | --- | --- |
-| 2024-10-14 | 45 questions | 205 words | 1.3h |
-| 2024-10-13 | 40 questions | 195 words | 1.0h |
-| 2024-10-12 | 62 questions | 240 words | 2.0h |
-| 2024-10-11 | 58 questions | 200 words | 1.2h |
-| 2024-10-10 | 60 questions | 225 words | 1.9h |
-| 2024-10-09 | 55 questions | 215 words | 1.8h |
-| 2024-10-08 | 52 questions | 212 words | 1.7h |
+| 2025-10-01 | 100 questions | 100 words | 1.0h |
 
 ### Progress Overview
 | Metric | Progress | Detail |
 | --- | --- | --- |
-| **Phase 1 time elapsed** | `........................` 0.0% | day 0 / 100 |
-| **Deru1000 understood** | `#####...................` 22.0% | 220 / 1,000 |
-| **Vocabulary understood** | `########................` 36.0% | 720 / 2,000 |
-| **Grammar understood** | `########................` 36.0% | - |
+| **Phase 1 time elapsed** | `##......................` 9.0% | day 9 / 100 |
+| **Deru1000 understood** | - | - |
+| **Vocabulary understood** | - | - |
+| **Grammar understood** | - | - |
 
 ### Output Summary
 | Metric | Last 7 days | Cumulative |
 | --- | --- | --- |
-| Deru1000 | 372 questions | 649 questions |
-| Vocabulary | 1,492 words | 2,940 words |
-| Grammar | 10.9h | 19.7h |
+| Deru1000 | 100 questions | 100 questions |
+| Vocabulary | 100 words | 100 words |
+| Grammar | 1.0h | 1.0h |
 <!--/KPIS-->
 
 ---
