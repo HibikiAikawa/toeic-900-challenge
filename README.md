@@ -11,6 +11,68 @@
 - 学習ログを公開し、外部からの視線でタスク達成を後押しできるか検証する
 - データで進捗を可視化し、継続を仕組み化する
 
+## 🗺️ Roadmap
+`roadmap.md` 参照
+
+<table style="width:100%;table-layout:fixed;border-collapse:collapse;text-align:center;">
+  <thead>
+    <tr>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Focus</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Oct</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Nov</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Dec</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Jan</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Feb</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Mar</th>
+      <th style="width:12.5%;padding:10px;border:1px solid #e5e7eb;">Apr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="padding:10px;border:1px solid #e5e7eb;">Phase</th>
+      <td colspan="3" style="background:#60a5fa;color:#0f172a;font-weight:600;border:1px solid #e5e7eb;">Phase 1</td>
+      <td style="background:#34d399;color:#064e3b;font-weight:600;border:1px solid #e5e7eb;">Phase 2</td>
+      <td colspan="2" style="background:#f59e0b;color:#78350f;font-weight:600;border:1px solid #e5e7eb;">Phase 3</td>
+      <td rowspan="7" style="background:#ef4444;color:#fff;font-weight:700;border:1px solid #e5e7eb;">本番</td>
+    </tr>
+    <tr>
+      <th rowspan="2" style="padding:10px;border:1px solid #e5e7eb;">単語</th>
+      <td colspan="6" style="background:#93c5fd;color:#1f2937;padding:10px;border:1px solid #e5e7eb;">Distinction 2000</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td colspan="3" style="background:#fde68a;color:#1f2937;padding:10px;border:1px solid #e5e7eb;">金のセンテンス</td>
+    </tr>
+    <tr>
+      <th style="padding:10px;border:1px solid #e5e7eb;">文法</th>
+      <td colspan="3" style="background:#a5b4fc;color:#1f2937;padding:10px;border:1px solid #e5e7eb;">一億人の英文法 / でる1000</td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+    </tr>
+    <tr>
+      <th style="padding:10px;border:1px solid #e5e7eb;">発音</th>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="background:#bae6fd;color:#1f2937;padding:10px;border:1px solid #e5e7eb;">発音特訓</td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+    </tr>
+    <tr>
+      <th rowspan="2" style="padding:10px;border:1px solid #e5e7eb;">応用</th>
+      <td colspan="6" style="background:#86efac;color:#065f46;padding:10px;border:1px solid #e5e7eb;">オンライン英会話</td>
+    </tr>
+    <tr>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td style="padding:10px;border:1px solid #e5e7eb;"></td>
+      <td colspan="2" style="background:#fdba74;color:#7c2d12;padding:10px;border:1px solid #e5e7eb;">TOEIC公式問題集</td>
+    </tr>
+  </tbody>
+</table>
+
 ## 📊 今日のKPI
 <!--KPIS-->
 集計スクリプト `scripts/summary.py` がここを書き換えます。
@@ -70,43 +132,7 @@ toeic-900-challenge/
 - Slack 通知や note への週次まとめテンプレート生成
 - 入力漏れ検出とリマインダー発火
 
-## 🗺️ Roadmap to April 2025
-`roadmap.md` をもとに、今日から 4 月の本番までの重点テーマを可視化しました。
 
-```mermaid
-gantt
-    title Roadmap to TOEIC 900 (Oct 2024 - Apr 2025)
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b
-
-    section フェーズ
-    Phase 1: 基礎固め (10-12月)      :p1, 2024-10-01, 2024-12-31
-    Phase 2: 音と語彙の集中特化 (1月) :p2, 2025-01-01, 2025-01-31
-    Phase 3: 応用と仕上げ (2-3月)    :p3, 2025-02-01, 2025-03-31
-
-    section 単語
-    Distinction 2000            :active, vocab1, 2024-10-01, 2025-03-31
-    金のセンテンス                    :vocab2, 2025-01-01, 2025-03-31
-
-    section 文法
-    Grammar deep dive (一億人の英文法 / でる1000) :crit, grammar, 2024-10-01, 2024-12-31
-
-    section 発音
-    Pronunciation bootcamp        :pron, 2025-01-01, 2025-01-31
-
-    section 応用
-    Online conversation     :conv, 2024-10-01, 2025-03-31
-    TOEIC official set        :prep1, 2025-02-01, 2025-03-31
-    Exam window                            :milestone, exam, 2025-04-15, 0d
-
-    classDef phase1 fill:#EEF2FF,stroke:#EEF2FF,color:#1f2937,font-size:12px;
-    classDef phase2 fill:#ECFDF5,stroke:#ECFDF5,color:#1f2937,font-size:12px;
-    classDef phase3 fill:#FEF3C7,stroke:#FEF3C7,color:#1f2937,font-size:12px;
-
-    class p1 phase1;
-    class p2 phase2;
-    class p3 phase3;
-```
 
 - **1〜2月**: 文法と語彙を徹底的に固め、発音ルールを体系化。
 - **3月**: 公式問題集を回し込み、リスニング・リーディング両セクションの弱点をログ化。
