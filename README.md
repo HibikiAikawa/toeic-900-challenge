@@ -3,6 +3,7 @@
 ### Latest 7 Days Snapshot
 | Date | Deru1000 Solved | Vocabulary | Grammar Study |
 | --- | --- | --- | --- |
+| 2025-09-25 | 0 questions | 400 words | 0.0h |
 | 2025-09-24 | 0 questions | 400 words | 0.0h |
 | 2025-09-23 | 0 questions | 400 words | 0.5h |
 | 2025-09-22 | 0 questions | 400 words | 0.5h |
@@ -10,7 +11,7 @@
 ### Progress Overview
 | Metric | Progress | Detail |
 | --- | --- | --- |
-| **Phase 1 time elapsed** | `........................` 2.0% | day 2 / 100 |
+| **Phase 1 time elapsed** | `........................` 3.0% | day 3 / 100 |
 | **Deru1000 understood** | `........................` 0.0% | 0 / 1,000 |
 | **Vocabulary understood** | `........................` 0.0% | 0 / 2,000 |
 | **Grammar understood** | `........................` 0.0% | - |
@@ -19,7 +20,7 @@
 | Metric | Last 7 days | Cumulative |
 | --- | --- | --- |
 | Deru1000 | 0 questions | 0 questions |
-| Vocabulary | 1,200 words | 1,200 words |
+| Vocabulary | 1,600 words | 1,600 words |
 | Grammar | 1.0h | 1.0h |
 <!--/KPIS-->
 
